@@ -35,7 +35,7 @@ namespace SSD_Components
 		sim_time_type Estimated_alone_waiting_time;//Used in scheduling methods, such as FLIN, where fairness and QoS is considered in scheduling
 		bool FLIN_Barrier;//Especially used in queue reordering in FLIN scheduler
 	private:
-
+	
 	};
 }
 

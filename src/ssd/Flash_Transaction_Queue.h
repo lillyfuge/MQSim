@@ -7,6 +7,9 @@
 #include "Queue_Probe.h"
 #include "../sim/Sim_Reporter.h"
 
+/*
+flash transaction use for what?
+*/
 namespace SSD_Components
 {
 	class Flash_Transaction_Queue : public std::list<NVM_Transaction_Flash*>, public MQSimEngine::Sim_Reporter

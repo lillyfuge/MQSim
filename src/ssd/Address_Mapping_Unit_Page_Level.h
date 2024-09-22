@@ -145,7 +145,6 @@ namespace SSD_Components
 		void Start_simulation();
 		void Validate_simulation_config();
 		void Execute_simulator_event(MQSimEngine::Sim_Event*);
-
 		void Allocate_address_for_preconditioning(const stream_id_type stream_id, std::map<LPA_type, page_status_type>& lpa_list, std::vector<double>& steady_state_distribution);
 		int Bring_to_CMT_for_preconditioning(stream_id_type stream_id, LPA_type lpa);
 		unsigned int Get_cmt_capacity();
@@ -184,7 +183,6 @@ namespace SSD_Components
 
 		void generate_flash_read_request_for_mapping_data(const stream_id_type streamID, const LPA_type lpn);
 		void generate_flash_writeback_request_for_mapping_data(const stream_id_type streamID, const LPA_type lpn);
-
 		unsigned int no_of_translation_entries_per_page;
 		MVPN_type get_MVPN(const LPA_type lpn, stream_id_type stream_id);
 		LPA_type get_start_LPN_in_MVP(const MVPN_type);
